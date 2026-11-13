@@ -1,232 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Project Title</title>
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
-  <script type="module"
-    src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/shoelace-autoloader.js"></script>
-
-  <link rel="stylesheet" href="./index.css">
-
-  <link rel="stylesheet" href="./components/team-member/team-member.css">
-  <script type="module" src="./components/team-member/team-member.js"></script>
-
-  <link rel="stylesheet" href="./components/table-of-content/table-of-content.css">
-
-  <script type="module" src="./components/image/image-component.js"></script>
-
-  <script type="module" src="./components/video/video.js"></script>
-
-  <link rel="stylesheet" href="./components/references/references.css">
-
-  <link rel="stylesheet" href="./components/scroll-to-top/scroll-to-top.css">
-  <script src="./components/scroll-to-top/scroll-to-top.js"></script>
-
-  <script src="./components/table-component/table-component.js"></script>
-
-  <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="content">
-    <h1>Project Title</h1>
-
-    <!-- This is the team member component use to display details about your team members -->
-    <div class="team-member-wrapper">
-      <team-member avatar="assets/blackranger.png" name="Black" department="Mechanical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/yellowranger.png" name="Yellow" department="Computer Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/redranger.png" name="Red" department="Electrical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/pinkranger.png" name="Pink" department="Biomedical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/blueranger.png" name="Blue" department="Chemical Engineering"
-        year="1993"></team-member>
-    </div>
-
-    <!-- This is a divide from the shoelace library for aesthetic purpose -->
-    <sl-divider></sl-divider>
-
-    <!-- This is the table-of-content component use to define all of the link directly to each section -->
-    <div class="table-of-content">
-      <h2>Table of Contents</h2>
-      <sl-tree>
-        <sl-tree-item expanded>
-          <a href="#section-header-1">1. Section Header 1</a>
-          <sl-tree-item>
-            <a href="#sub-section-1-header-1">1.1. Sub-section Header 1</a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#sub-section-1-header-2">1.2. Sub-section Header 2</a>
-          </sl-tree-item>
-        </sl-tree-item>
-
-        <sl-tree-item expanded>
-          <a href="#section-header-2">2. Section Header 1</a>
-          <sl-tree-item>
-            <a href="#sub-section-2-header-1">2.1. Sub-section Header 1</a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#sub-section-2-header-2">2.2. Sub-section Header 2</a>
-          </sl-tree-item>
-        </sl-tree-item>
-
-        <sl-tree-item>
-          <a href="#references">References</a>
-        </sl-tree-item>
-      </sl-tree>
-    </div>
-    <sl-divider></sl-divider>
-
-    <div>
-
-      <!-- This is an example of what a section might look like -->
-      <div id="section-header-1">
-        <h2> 1. Section Header 1 </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna
-          aliqua. Tincidunt ornare massa eget egestas. At tellus at urna condimentum mattis pellentesque id nibh tortor.
-          Elementum sagittis vitae et leo duis ut diam. Morbi tristique senectus et netus et malesuada fames.
-          Suspendisse
-          ultrices gravida dictum fusce ut placerat orci. Risus nullam eget felis eget nunc lobortis mattis aliquam
-          faucibus
-          (Brody, 2007). Eget sit amet tellus cras adipiscing enim eu turpis egestas. Aliquet nibh praesent tristique
-          magna
-          sit amet purus. Adipiscing bibendum est ultricies integer quis auctor elit sed. Fermentum et sollicitudin ac
-          orci
-          phasellus egestas tellus rutrum. At in tellus integer feugiat scelerisque varius morbi enim nunc. Volutpat
-          blandit
-          aliquam etiam erat velit scelerisque in. Id diam maecenas ultricies mi eget mauris pharetra et. Nec dui nunc
-          mattis
-          enim ut tellus elementum sagittis vitae.
-        </p>
-      </div>
-
-      <div id="sub-section-1-header-1">
-        <h3>1.1 Sub-section Header 1</h3>
-        <p>
-          Ultrices dui sapien eget mi. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Dolor purus non enim
-          praesent elementum facilisis. Lacus vestibulum sed arcu non odio euismod lacinia at. Metus aliquam eleifend mi
-          in nulla. Lacus sed viverra tellus in hac habitasse platea. Varius quam quisque id diam vel quam elementum
-          pulvinar. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Diam ut venenatis tellus in metus
-          vulputate. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Venenatis lectus magna
-          fringilla
-          urna. In nisl nisi scelerisque eu ultrices. Velit egestas dui id ornare arcu odio ut sem nulla. Quam id leo in
-          vitae. Egestas congue quisque egestas diam in arcu cursus euismod quis. Porttitor leo a diam sollicitudin
-          tempor
-          id eu nisl.
-        </p>
-      </div>
-
-      <div id="sub-section-1-header-2">
-        <h3>1.2 Sub-section Header 2</h3>
-        <p>
-          Fermentum dui faucibus in ornare quam viverra orci. Donec ultrices tincidunt arcu non sodales. A diam maecenas
-          sed enim ut sem viverra. Semper viverra nam libero justo laoreet sit. Mi sit amet mauris commodo quis. Auctor
-          augue mauris augue neque gravida in fermentum et. Auctor elit sed vulputate mi sit amet. Maecenas pharetra
-          convallis posuere morbi leo urna. Sem nulla pharetra diam sit amet nisl. Id nibh tortor id aliquet lectus.
-          Nibh
-          nisl condimentum id venenatis a condimentum vitae sapien. Convallis posuere morbi leo urna molestie at
-          elementum.
-        </p>
-
-        <!-- This is an example of how you might use the image component -->
-        <image-component tag="image" source="assets/requirement.png"
-          subtitle="Image 1: iDP suggested pathway"></image-component>
-      </div>
-    </div>
-
-
-    <br />
-    <br />
-    <sl-divider></sl-divider>
-    <div>
-      <div id="section-header-2">
-        <h2>2. Section Header 2</h2>
-        <p>
-          Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
-          eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
-          tellus in hac habitasse platea dictumst vestibulum. At augue eget arcu dictum varius duis. Mauris ultrices
-          eros in cursus turpis massa (Lindberg, 1967). Libero nunc consequat interdum varius sit amet mattis. Ut ornare
-          lectus sit amet est placerat in egestas erat. Elementum curabitur vitae nunc sed. Proin nibh nisl condimentum
-          id venenatis a condimentum vitae sapien (Chamberlin et al., 2008). Vitae tempus quam pellentesque nec nam
-          aliquam sem.
-        </p>
-      </div>
-
-      <div id="sub-section-2-header-1">
-        <h3>2.1. Sub-section Header 1</h3>
-        <p>
-          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
-          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
-          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
-          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
-          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
-          fames ac. <a href="#image">Link to the image above</a>
-        </p>
-
-        <!-- This is an example of how you might use the video component -->
-        <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          subtitle="Video: Never gonna give you up?"></video-component>
-      </div>
-
-      <div id="sub-section-2-header-2">
-        <h3>2.2. Sub-section Header 2</h3>
-        <p>
-          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
-          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
-          habitant
-          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
-          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
-          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
-        </p>
-
-        <!-- This is an example of how you might use the table component -->
-        <table-component subtitle="Table: Demo table">
-          <div id="table-1"></div>
-        </table-component>
-      </div>
-    </div>
-
-    <!-- This is an example of how you can use the references component to create references -->
-    <div id="references" class="references">
-      <sl-divider></sl-divider>
-      <h2>References</h2>
-      <ul>
-        <li>
-          Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times. Retrieved from
-          http://www.dowjones.com/factiva/
-        </li>
-        <li>
-          Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational
-          health psychologists convene to share their research on work, stress, and health. Monitor on Psychology,
-          39(5), 26-29.
-        </li>
-        <li>
-          Jones, T. J., & Fields, N. (2003). Emotional quotient and personality. E-Journal of Applied Psychology, 2(2),
-          38-45. Retrieved from http://ejournalappliedpsyc/index.php/ejap
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- This is the code to display the scroll to top button for ergonomic -->
-  <!-- You can leave it as it is, or if you don't like its aesthetics you can also just delete it, -->
-  <!-- but it might reduce the user experience. -->
-  <sl-button class="scroll-to-top" variant="primary" size="medium" circle onclick="scrollToTop()">
-    <sl-icon name="arrow-up" label="Settings"></sl-icon>
-  </sl-button>
-
-  <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
-  <script type="module" src="./components/table-component/table-component.js"></script>
-</body>
-
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>VR-401: Gen-AI and VR-based full-body dance sensing and choreography optimisation</title><link rel="stylesheet" href="index.css"></head><body><main><header><h1>VR-401: Gen-AI and VR-based full-body dance sensing and choreography optimisation</h1><figure class="profile"><img src="report-media/profile-picture.jpg" alt="Park Junha holding a VR headset"></figure><p class="author">Park Junha (A0240411B)<br>Industrial Systems Engineering</p></header><nav aria-label="Table of contents"><h2>Table of Contents</h2><ul><li><a href="#section-1">1. Introduction and Project Context</a></li><li><a href="#section-2">2. Survey Findings and Identified Practice Needs</a></li><li class="subsection"><a href="#section-2-1">2.1 Survey Overview</a></li><li class="subsection"><a href="#section-2-2">2.2 Ideal Practice Conditions and Access to Mirrors</a></li><li class="subsection"><a href="#section-2-3">2.3 Desired Learning Support</a></li><li class="subsection"><a href="#section-2-4">2.4 Difficulties and Three Connected Needs</a></li><li><a href="#section-3">3. Existing Systems and Studies</a></li><li class="subsection"><a href="#section-3-1">3.1 Seeing the Execution</a></li><li class="subsection"><a href="#section-3-2">3.2 Identifying Discrepancies</a></li><li class="subsection"><a href="#section-3-3">3.3 Delivering Corrections</a></li><li><a href="#section-4">4. Refined Problem Statement</a></li><li><a href="#section-5">5. Design Objectives</a></li><li class="subsection"><a href="#section-5-1">5.1 Capture and Present Movement for Self-Observation</a></li><li class="subsection"><a href="#section-5-2">5.2 Identify Relevant Movement Discrepancies</a></li><li class="subsection"><a href="#section-5-3">5.3 Deliver Understandable Corrections</a></li><li><a href="#section-6">6. Technologies Investigated for Design Objective 1</a></li><li class="subsection"><a href="#section-6-1">6.1 Sound Game Training</a></li><li class="subsection"><a href="#section-6-2">6.2 Sway Formations</a></li><li class="subsection"><a href="#section-6-3">6.3 Full-Body Tracking in VR</a></li><li><a href="#section-7">7. Selected Concept and Next-Semester Development</a></li><li class="subsection"><a href="#section-7-1">7.1 Selected Concept</a></li><li class="subsection"><a href="#section-7-2">7.2 Defining Parameters and Building Examples</a></li><li class="subsection"><a href="#section-7-3">7.3 Developing Identification and Corrections</a></li><li class="subsection"><a href="#section-7-4">7.4 Scoring and Testing with Dancers</a></li><li><a href="#section-8">8. Next-Semester Schedule and Gantt Chart</a></li><li><a href="#references">References</a></li><li><a href="#appendix-a">Appendix A: Survey Questionnaire and Anonymised Responses</a></li></ul></nav>
+<h2 id="section-1">1. Introduction and Project Context</h2>
+<figure><a href="report-media/various-performance-photos.jpg" target="_blank"><img loading="lazy" src="report-media/various-performance-photos.jpg" alt="Image 1: Recent performances I was involved in"></a><figcaption>Image 1: Recent performances I was involved in</figcaption></figure>
+<p>As a dancer myself with a background in modern K-pop and J-pop idol choreography, I know how much preparation goes into a single performance. A few minutes on stage can involve months of learning, rehearsing, and refining movements. Outside group rehearsals, much of this work happens independently. We learn from reference videos, check ourselves in mirrors, and watch recordings to understand what needs improving.</p>
+<p>However, this process is not always straightforward. I can sometimes see or feel that a movement looks different from the reference without knowing exactly what to change. At other times, I only notice a mistake when a more experienced dancer points it out during the group rehearsal. My project investigates how technology could support this process during independent practice.</p>
+<p>The project focuses on the idol-dance community I am involved in, including the dancers I engage with, the choreography I investigate, and the practice situations I test. My own experience provides a starting point, while the survey and technical trials help me check which difficulties others share and which solutions are worth developing.</p>
+<p>This semester, I investigated dancer needs, reviewed relevant studies, and explored existing tools for viewing and capturing movement. These activities led to a proposed VR practice system. Next semester, I plan to extend it towards identifying movement differences and providing corrections that dancers can understand and incorporate into their existing practice workflow.</p>
+<h2 id="section-2">2. Survey Findings and Identified Practice Needs</h2>
+<h3 id="section-2-1">2.1 Survey Overview</h3>
+<p>I surveyed 35 dancers in my community about their ideal practice conditions, desired learning support, and difficulties during independent practice. The questionnaire used three open-ended questions, allowing dancers to explain their experiences in their own words. The responses were collected in August and September 2026.</p>
+<p>I grouped the responses into related themes. A response could contribute to several themes, but each dancer was counted once within a theme. The percentages below use all 35 respondents as the denominator. They show how often something was mentioned, rather than a ranking of importance. The facilities and challenges questions each received 34 answers and all respondents answered the learning support question.</p>
+<h3 id="section-2-2">2.2 Ideal Practice Conditions and Access to Mirrors</h3>
+<table><caption>Table 1: Survey question 1 results <a href="#appendix-a">[Appendix A]</a></caption><thead><tr><th scope="col">Preferred Practice Condition</th><th scope="col">Respondents</th><th scope="col">Percentage</th></tr></thead><tbody><tr><td>Mirrors</td><td>33</td><td>94.3%</td></tr><tr><td>Cooling or Ventilation</td><td>32</td><td>91.4%</td></tr><tr><td>Sufficient Space or Suitable Layout</td><td>17</td><td>48.6%</td></tr><tr><td>Audio and Acoustic Conditions</td><td>14</td><td>40.0%</td></tr><tr><td>Suitable Flooring</td><td>11</td><td>31.4%</td></tr><tr><td>Lighting</td><td>9</td><td>25.7%</td></tr><tr><td>Visual Privacy</td><td>4</td><td>11.4%</td></tr></tbody></table>
+<p>Mirrors were mentioned by 33 of the 35 dancers, alongside comfort requirements such as cooling and having enough space. The descriptions included full-length visibility, wide and undistorted reflections, and being able to check movement from different directions. These details suggest that dancers value a clear view of their whole execution, rather than simply having any reflective surface nearby.</p>
+<figure><a href="report-media/frosted-public-mirrors-and-ig-post.jpg" target="_blank"><img loading="lazy" src="report-media/frosted-public-mirrors-and-ig-post.jpg" alt="Image 2: Frosted over public mirrors at Bayfront MRT and Instagram post on excessive “chope-ing” of mirrors at *SCAPE"></a><figcaption>Image 2: Frosted over public mirrors at Bayfront MRT and Instagram post on excessive “chope-ing” of mirrors at *SCAPE</figcaption></figure>
+<p>The question asked about ideal facilities, so these results do not mean that 33 dancers currently lack mirror access. Nevertheless, access to suitable spaces with reflective surfaces is a practical challenge outside the survey. CNA (2026) reported that popular mirrored corridors along the Bayfront MRT linkway were frosted after complaints about pedestrian obstruction <a class="citation" href="#ref-2">[2]</a>. Dancers described it as losing an already limited valuable free practice location. Excessive “chope-ing” of mirrored spaces due to limited practice locations also contribute to this challenge <a class="citation" href="#ref-3">[3]</a>. These examples illustrate the difficulty in securing comfortable spaces where dancers can sufficiently view themselves, although it does not establish how widespread the problem is across Singapore.</p>
+<p>My project cannot resolve every facility requirement. Dancers would still need adequate space, suitable flooring, and ventilation. The opportunity is to support observation in otherwise suitable places without depending on already installed mirrors.</p>
+<h3 id="section-2-3">2.3 Desired Learning Support</h3>
+<table><caption>Table 2: Survey question 2 results <a href="#appendix-a">[Appendix A]</a></caption><thead><tr><th scope="col">Desired Support</th><th scope="col">Respondents</th><th scope="col">Percentage</th></tr></thead><tbody><tr><td>Self-observation</td><td>20</td><td>57.1%</td></tr><tr><td>Corrective or Interpretive Guidance</td><td>14</td><td>40.0%</td></tr><tr><td>Step-by-step Instruction</td><td>13</td><td>37.1%</td></tr><tr><td>Playback Speed Adjustment</td><td>10</td><td>28.6%</td></tr><tr><td>Explicit Reference Comparison</td><td>7</td><td>20.0%</td></tr><tr><td>Timing or Count Support</td><td>4</td><td>11.4%</td></tr></tbody></table>
+<p>Self-observation was the most frequently mentioned support theme, in line with the first survey question. However, dancers also requested explanations, step-by-step breakdowns, and playback controls. This suggests that providing a view of the dancer is only one part of supporting practice.</p>
+<p>The responses described different uses for mirrors and recordings. Mirrors helped dancers check and adjust their movements immediately, while recordings made some details easier to notice afterwards. A useful system may therefore need both live observation and review. Playback controls also matter because dancers need to isolate a difficult section, slow it down, and repeat it without interrupting their practice unnecessarily.</p>
+<p>Requests for guidance ranged from checking alignment to understanding accents, weight placement, and how to execute a move. These are not equally straightforward to assess. Seeing where a limb is positioned may support an alignment comparison, but does not directly establish muscle activation or how weight is distributed between the feet. I will therefore need to select movements based on what the system can measure reliably.</p>
+<h3 id="section-2-4">2.4 Difficulties and Three Connected Needs</h3>
+<p>Some difficulties during independent practices include a mismatch between how dancers thought they were moving and how they actually looked, uncertainty about small adjustments, and a lack of explanation for differences from the reference. Some depended on another person to identify improvements. Other challenges included learning fast sequences, body control, self-consciousness, and motivation.</p>
+<p>Together, the findings suggest three connected needs: seeing actual execution, identifying what differs from the intended choreography, and understanding how to correct it. A mirror can help with the first, but it does not automatically explain the other two.</p>
+<p>The survey remains exploratory and the sample comes from my own dance community. It did not establish willingness to wear equipment or acceptable setup time for potential technologies that could support independent practice. These questions require follow-up investigation, especially when assessing whether a proposed system fits actual practice workflows.</p>
+<h2 id="section-3">3. Existing Systems and Studies</h2>
+<p>I reviewed technological approaches that address parts of these three needs. The aim was to understand what already exists and what I could learn from it before selecting my own approach.</p>
+<h3 id="section-3-1">3.1 Seeing the Execution</h3>
+<figure><a href="report-media/treffer-mixed-reality-mirror.png" target="_blank"><img loading="lazy" src="report-media/treffer-mixed-reality-mirror.png" alt="Image 3: Mixed-reality mirror displaying the dancer’s movement and instructions on the same screen"></a><figcaption>Image 3: Mixed-reality mirror displaying the dancer’s movement and instructions on the same screen</figcaption></figure>
+<p>Treffer (2024) investigated different technological visual feedback methods for dance teaching <a class="citation" href="#ref-6">[6]</a>. One notable example was a mixed-reality mirror using an Azure Kinect camera and projector. It displayed the learner&#x27;s image alongside a virtual instructor and compared three visual-feedback methods, Spheres, Rubber Bands, and Arrows. Participants performed best with Arrows but preferred Spheres. This suggests that an appealing interface should not automatically be treated as the most effective learning tool.</p>
+<p>For my project, the study demonstrates how self-observation and a reference can share one interface. My remaining question is how to make this support portable and easy to deploy without permanent installations. The camera and projector arrangement is a precedent to learn from, rather than evidence that the study itself failed to address portability.</p>
+<h3 id="section-3-2">3.2 Identifying Discrepancies</h3>
+<figure><a href="report-media/chan-movement-capture.png" target="_blank"><img loading="lazy" src="report-media/chan-movement-capture.png" alt="Image 4: Movement capture system developed by Chan and colleagues"></a><figcaption>Image 4: Movement capture system developed by Chan and colleagues</figcaption></figure>
+<p>Chan et al. (2011) developed a system that captured learners&#x27; movements and analysed them against a virtual teacher projected onto a screen <a class="citation" href="#ref-1">[1]</a>. The authors reported improvements in dance skills and positive responses concerning interest and motivation. This demonstrates how movement data can support comparison beyond the dancer&#x27;s own visual judgement.</p>
+<p>For idol choreography, I still need to determine which differences matter. Dancers may vary their expression or movement style without performing incorrectly. Body proportions and errors in captured movement can also create apparent differences. The project therefore needs assessment criteria suited to selected movements, rather than treating every discrepancies from a reference as a mistake.</p>
+<h3 id="section-3-3">3.3 Delivering Corrections</h3>
+<figure><a href="report-media/trajkova-correction.png" target="_blank"><img loading="lazy" src="report-media/trajkova-correction.png" alt="Image 5: Dancers responding to various visual and verbal corrections"></a><figcaption>Image 5: Dancers responding to various visual and verbal corrections</figcaption></figure>
+<p>Trajkova and Cafaro (2018) examined visual and verbal feedback with 16 novice and 16 expert ballet dancers <a class="citation" href="#ref-5">[5]</a>. They also compared value and corrective feedback, with and without mirror guidance. Their findings indicate that feedback design should account for the learner&#x27;s experience.</p>
+<figure><a href="report-media/eaves-graph.png" target="_blank"><img loading="lazy" src="report-media/eaves-graph.png" alt="Image 6: Graph showing lower mean continuous error with reduced feedback"></a><figcaption>Image 6: Graph showing lower mean continuous error with reduced feedback</figcaption></figure>
+<p>Eaves et al. (2011) compared full, reduced, and absent real-time feedback with 30 novices <a class="citation" href="#ref-4">[4]</a>. Reduced feedback concerning four end-effectors produced greater error reductions across five measures than the other conditions. This suggests a good opportunity to investigate focused corrections instead of showing every difference simultaneously.</p>
+<p>These studies inform how feedback could be presented, but do not establish the best arrangement for idol choreography. My next step is to investigate how identified differences can become understandable adjustments for my target users.</p>
+<h2 id="section-4">4. Refined Problem Statement</h2>
+<p>The user investigation and existing studies lead to the following problem statement:</p>
+<p>Beginner and intermediate dancers practising modern K-pop and J-pop idol choreography independently need accessible ways to observe their execution, identify relevant movement discrepancies, and understand corrections they can practise.</p>
+<p>Existing research demonstrates ways of supporting some of these stages. My project will investigate how to bring them together in a practical workflow for independent idol dance practice. The main questions are how to provide portable observation, distinguish meaningful mistakes from acceptable variation, and communicate a useful correction. These questions guide the objectives and the investigation of possible approaches.</p>
+<h2 id="section-5">5. Design Objectives</h2>
+<h3 id="section-5-1">5.1 Capture and Present Movement for Self-Observation</h3>
+<p>The first objective is to let dancers clearly observe their movements live through an avatar without installed mirrors. I aim to achieve a setup time of less than ten minutes, measured from unpacking to readiness for practice, including equipment placement, additional wearables if any, software checks, and calibration.</p>
+<p>For live self-observation, I will target a delay of 75 milliseconds or less between the dancer’s physical movement and the corresponding avatar movement displayed in the headset. This initial target is informed by Waltemate et al. (2016) and will be evaluated during the selected dance tasks <a class="citation" href="#ref-7">[7]</a>.</p>
+<p>These are provisional design targets that will be reviewed through pilot testing. They provide a basis for assessing progress in preparation time, responsiveness, and movement accuracy.</p>
+<h3 id="section-5-2">5.2 Identify Relevant Movement Discrepancies</h3>
+<p>The second objective is to identify which movement parameters to measure and establish how much deviation from the reference should be considered a mistake rather than acceptable stylistic variation. I will develop these criteria with dance teachers and item ICs using selected choreography and/or dance moves.</p>
+<p>My initial targets are to detect at least 80% of expert-labelled mistakes while incorrectly flagging no more than 20% of acceptable examples. I will evaluate these targets using examples separate from those used to develop the assessment criteria. This will check whether the system identifies relevant mistakes without unnecessarily correcting acceptable movements.</p>
+<h3 id="section-5-3">5.3 Deliver Understandable Corrections</h3>
+<p>The third objective is to communicate adjustments that dancers can understand and apply. I will investigate the amount, format, and timing of feedback, with initial targets of at least 80% of feedback cues being correctly understood and an average reduction of at least 20% in selected movement error after practice.</p>
+<p>I will check understanding by asking dancers to explain or demonstrate the requested adjustment. A consistent scoring method will measure movement error before and after practice, with equal duration video-based practice used for comparison. These provisional targets will be reviewed through pilot testing.</p>
+<p>Initial evaluation will focus on a short J-pop choreography section and selected observable movement features. This keeps the task manageable while allowing me to investigate the complete process from observation to correction.</p>
+<h2 id="section-6">6. Technologies Investigated for Design Objective 1</h2>
+<p>This semester, I focused on the first objective, how movement can be captured and presented for observation. I investigated video-based practice, camera-based reconstruction, and full body tracking using wearable trackers in VR. Wearable trackers with a conventional screen method was also considered, but not tested separately.</p>
+<p>The trials were exploratory. They helped identify useful features and practical limitations, rather than providing a controlled ranking of technologies.</p>
+<h3 id="section-6-1">6.1 Sound Game Training</h3>
+<figure><a href="report-media/sound-game-training.png" target="_blank"><img loading="lazy" src="report-media/sound-game-training.png" alt="Image 7: Sound Game Training app’s various playback controls"></a><figcaption>Image 7: Sound Game Training app’s various playback controls</figcaption></figure>
+<p>Sound Game Training is an established tool in my dance community. I use it in my own practice and when teaching. Its playback controls make it convenient to isolate sections, adjust speed, and repeatedly practise difficult segments. It will serve as the benchmark for the media controls in my prototype.</p>
+<p>However, it controls the reference video rather than capturing any movement. Self-observation still requires a recording or reflection, and identifying differences depends on the dancer. This makes it useful for understanding the existing practice workflow, while leaving room to add observation and comparison functions.</p>
+<h3 id="section-6-2">6.2 Sway Formations</h3>
+<figure><video controls playsinline preload="metadata" src="report-media/sway-formations.mp4">Your browser does not support this video. <a href="report-media/sway-formations.mp4">Download video</a>.</video><figcaption>Video 1: Sway Formations’ dance reconstruction into 3D avatar</figcaption></figure>
+<p>Sway Formations converts a dance recording into a three-dimensional avatar that can be viewed from different angles. This offers a way to inspect movement beyond the original camera view. It also suggests the possibility of presenting both learner and reference choreography using a common visual format.</p>
+<p>My testing revealed some limitations though. It struggled with travelling movements and changes of position, and had difficulties with obstructions. The avatar also showed noticeable foot sliding. I suspect floor referencing may contribute, but I have not established the cause.</p>
+<p>These observations matter because a reconstructed difference could come from the software rather than the dancer. Similar avatar appearances may make comparison easier to read, but do not automatically make the movement data more accurate. Next semester, I will investigate whether the reconstructed features and available data are suitable for reference comparison.</p>
+<h3 id="section-6-3">6.3 Full-Body Tracking in VR</h3>
+<figure><a href="report-media/vr-fbt.jpg" target="_blank"><img loading="lazy" src="report-media/vr-fbt.jpg" alt="Image 8: Various forms of full body tracking in VR"></a><figcaption>Image 8: Various forms of full body tracking in VR</figcaption></figure>
+<p>Wearable tracking in VR provided live self-observation through an avatar. Of the lighthouse, inertial, and electromagnetic options considered, I tested lighthouse because I already had access to the equipment. The other options remain possible investigations depending on availability.</p>
+<figure><a href="report-media/base-stations.jpg" target="_blank"><img loading="lazy" src="report-media/base-stations.jpg" alt="Image 9: Base stations around the play area for lighthouse tracking"></a><figcaption>Image 9: Base stations around the play area for lighthouse tracking</figcaption></figure>
+<figure><a href="report-media/vr-trackers-updated.jpg" target="_blank"><img loading="lazy" src="report-media/vr-trackers-updated.jpg" alt="Image 10: VR trackers and Meta Quest 3 used for the trial and how they are attached"></a><figcaption>Image 10: VR trackers and Meta Quest 3 used for the trial and how they are attached</figcaption></figure>
+<p>Lighthouse Trial: I transported a PCVR setup to a practice venue, using base stations around the movement area, trackers worn on the body, a headset, and a gaming laptop. The equipment operated from one available power outlet through extension equipment. I used limited body-tracker coverage to explore how much movement information could be obtained while keeping the setup relatively simple.</p>
+<p>Preparation involved positioning base stations, activating trackers, checking SteamVR, wearing the trackers, and completing the necessary calibration. It took approximately 15 minutes despite my prior VR experience. This is an estimate from the trial, rather than an average from repeated deployments. The devices connected successfully during the session.</p>
+<p>The setup demonstrated excellent live avatar observation without a physical mirror. VR also allows for customisable environments and avatar appearances. Remote instruction in a shared three-dimensional space is another possible application, although I did not test it.</p>
+<figure><video controls playsinline preload="metadata" src="report-media/elbow-and-knee.mp4">Your browser does not support this video. <a href="report-media/elbow-and-knee.mp4">Download video</a>.</video><figcaption>Video 2: Discrepancies in some elbow and knee representation</figcaption></figure>
+<p>The trackers were not particularly uncomfortable, but I could feel them and worries about damaging them made me hold back during powerful movements. I also observed discrepancies in some elbow and knee representation during movements involving wrist or ankle rotation. Limited sensor coverage may contribute, but calibration and the software&#x27;s estimation of untracked joints also need investigation.</p>
+<p>I recorded examples for review, but did not establish numerical tracking accuracy. Further tests will repeat selected movements with different configurations and examine whether additional sensors improve accuracy enough to justify the extra weight and wearing burden.</p>
+<p>The trial also helped separate device tracking from full-body representation. Even if the tracked hand follows my movement, the software still needs to estimate an elbow without its own sensor. A visible mismatch could therefore arise from how the body is reconstructed, rather than the tracker losing its position. This distinction will guide the next tests and help avoid adding equipment without understanding the source of the problem.</p>
+<h2 id="section-7">7. Selected Concept and Next-Semester Development</h2>
+<h3 id="section-7-1">7.1 Selected Concept</h3>
+<p>I selected VR as the direction for my prototype because it supports live avatar observation without installed mirrors and offers a way to combine reference viewing, playback controls, and corrections in one environment. This decision is based on the functions I want to develop and the trial experience. It does not establish that VR is universally more accurate or easier to prepare than the alternatives.</p>
+<p>I plan to provide a virtual mirror and playback controls benchmarked against Sound Game Training. I will also investigate adding a reference dancer reconstructed from video similar to the functions of Sway Formations, allowing users to inspect the choreography from different angles. If reconstruction is unsuitable, the system can initially retain a video reference while other functions are developed.</p>
+<p>The intended session would begin with setup and calibration, followed by choosing a choreography section and playback speed. Dancers could watch the reference, perform the section, and review a selected difference before repeating it. I will investigate when the corrections should be deployed, during execution or between attempts, since dancers may struggle to read and apply several cues while moving.</p>
+<p>Customisable outfits and environments could extend the experience, including recreating a performance stage. However, my immediate priorities are preparation, accurate movement representation, and the three design objectives. The contribution to take note should include the practice workflow, movement-assessment criteria, and feedback built around existing tracking hardware.</p>
+<h3 id="section-7-2">7.2 Defining Parameters and Building Examples</h3>
+<p>Next semester, I will work with dance teachers and item ICs, meaning the leaders responsible for teaching individual performance items. Together, we will select movement features and discuss acceptable variation. Possible measurements include joint angles, hand positions, and timing relative to counts, depending on the choreography.</p>
+<p>Their assessments will help build labelled examples of acceptable execution and mistakes, paired with explanations and corrections. Where teachers disagree, I will examine whether the criterion is unclear or reflects a legitimate stylistic choice. These examples will help establish thresholds that are meaningful for the selected movements.</p>
+<h3 id="section-7-3">7.3 Developing Identification and Corrections</h3>
+<p>I will first develop a comparison method using the selected parameters. Reference and learner movement will need to be aligned in time and account for relevant body-size differences. This method will provide a baseline for investigating AI-assisted identification and correction.</p>
+<p>The expert-labelled examples could support model development, but the model and amount of data required have not yet been decided. I will evaluate detection using examples separate from those used to develop it, checking both missed mistakes and false corrections. Feedback should explain the measured difference and suggest an adjustment consistent with the teachers&#x27; assessments.</p>
+<h3 id="section-7-4">7.4 Scoring and Testing with Dancers</h3>
+<p>Before the main user trials, I will establish a consistent scoring method for the selected features. For example, a defined pose could use joint-angle error, while a transition might require timing or movement-path measurements. Scores will be checked against recordings or expert assessments, rather than relying only on the system&#x27;s own judgement.</p>
+<p>I plan to compare practice with the prototype against video-based practice over similar durations. Measurements will include scores before and after practice, whether dancers understand the cues, and whether they can make the intended adjustment. A later attempt without feedback could help assess retention. Participant numbers and the detailed procedure will be decided after pilot testing.</p>
+<p>I will also record setup time, interruptions, and whether the equipment affects confidence or movement. These practical measures are important because a system could improve a selected score while still being too inconvenient for regular practice. The evaluation should establish both what improves and what dancers must do to obtain that benefit.</p>
+<h2 id="section-8">8. Next-Semester Schedule and Gantt Chart</h2>
+<p>The schedule follows the three objectives, with tracking and setup improvements running alongside development of assessment criteria. The first milestone is a usable VR practice environment and subsequent milestones are agreed movement criteria, an integrated feedback system, and completed dancer evaluation.</p>
+<figure><a href="report-media/gantt-chart.jpg" target="_blank"><img loading="lazy" src="report-media/gantt-chart.jpg" alt="Image 11: Gantt chart of future plans and upcoming performances (EOY, JCF, Odoshow)"></a><figcaption>Image 11: Gantt chart of future plans and upcoming performances (EOY, JCF, Odoshow)</figcaption></figure>
+<p>Upcoming performances involving me and my dance community provide opportunities to gather feedback as each design objective is developed. These sessions will support early improvements, followed by a more structured comparison of practice outcomes. Optional hardware tests and customisation will depend on available time, while the core system will remain achievable with available equipment.</p>
+<h2 id="references">References</h2>
+<p class="reference" id="ref-1">[1] J. C. P. Chan, H. Leung, J. K. T. Tang, and T. Komura, “A virtual reality dance training system using motion capture technology,” IEEE Transactions on Learning Technologies, vol. 4, no. 2, pp. 187–195, 2011, doi: <a href="https://doi.org/10.1109/TLT.2010.27" target="_blank" rel="noopener noreferrer">10.1109/TLT.2010.27</a>.</p>
+<p class="reference" id="ref-2">[2] CNA, “Frosted mirrors along Bayfront MRT linkway draw complaints from dancers on loss of rare free space,” Jan. 16, 2026. Accessed: Oct. 21, 2026. [Online]. Available: <a href="https://www.channelnewsasia.com/singapore/frosted-mirrors-bayfront-mrt-linkway-dancers-dance-groups-obstruction-5863621" target="_blank" rel="noopener noreferrer">https://www.channelnewsasia.com/singapore/frosted-mirrors-bayfront-mrt-linkway-dancers-dance-groups-obstruction-5863621</a></p>
+<p class="reference" id="ref-3">[3] Sanxithe, “Dancers at *SCAPE We need to talk,” Instagram, Sep. 24 2026. Accessed: Oct. 21, 2026. [Online]. Available: <a href="https://www.instagram.com/p/DdqMjUzk6O1/" target="_blank" rel="noopener noreferrer">https://www.instagram.com/p/DdqMjUzk6O1/</a></p>
+<p class="reference" id="ref-4">[4] D. Eaves, G. Breslin, and I. R. Spears, “The short-term effects of real-time virtual reality feedback on motor learning in dance,” Presence: Teleoperators and Virtual Environments, vol. 20, no. 1, pp. 62–77, 2011, doi: <a href="https://doi.org/10.1162/pres_a_00035" target="_blank" rel="noopener noreferrer">10.1162/pres_a_00035</a>.</p>
+<p class="reference" id="ref-5">[5] M. Trajkova and F. Cafaro, “Takes Tutu to Ballet: Designing visual and verbal feedback for augmented mirrors,” Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, vol. 2, no. 1, Art. no. 38, 2018, doi: <a href="https://doi.org/10.1145/3191770" target="_blank" rel="noopener noreferrer">10.1145/3191770</a>.</p>
+<p class="reference" id="ref-6">[6] A. Treffer, “Teaching dance with mixed reality mirrors: Comparing virtual instructors to other forms of visual feedback,” master’s thesis, University of Canterbury, Christchurch, New Zealand, 2024, doi: <a href="https://doi.org/10.26021/15322" target="_blank" rel="noopener noreferrer">10.26021/15322</a>.</p>
+<p class="reference" id="ref-7">[7] “Latency,” VR &amp; AR Wiki. Accessed: Oct. 21, 2026. [Online]. Available: <a href="https://vrarwiki.com/wiki/Latency" target="_blank" rel="noopener noreferrer">https://vrarwiki.com/wiki/Latency</a></p>
+<h2 id="appendix-a">Appendix A: Survey Questionnaire and Anonymised Responses</h2>
+<h3>1. Ideal Practice Facilities &amp; Setup</h3>
+<p>What physical setups, facilities, or practice conditions (e.g. mirrors, aircon, good lighting, floor space, sound setup, etc.) make you feel most comfortable and productive when practicing? Describe your dream practice space.</p>
+<h3>2. Learning &amp; Training Support</h3>
+<p>When you are practicing on your own outside of club/group rehearsals or practices, what kind of guidance or (visual) feedback would help you improve the fastest? (e.g. being able to see yourself in recordings, access to broken down step-by-step tutorials, easy speed adjustments, feedback on body alignment, etc.)</p>
+<h3>3. Struggles, Worries, or Frustrations</h3>
+<p>What is your biggest challenge, worry, or block when learning, practicing, or creating dance on your own without an instructor present? (Example for beginners: self-consciousness, feeling lost with body control or timing, etc. Example for experienced dancers: hitting creative blocks, feedback on subtle technical errors, etc.)</p>
+<p><a href="https://docs.google.com/spreadsheets/d/1UAPwzrgB-Q0uObMylI1uGdmCx4dplK11paAxodelBe4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View anonymised survey responses - Google Sheets</a></p>
+</main></body></html>
